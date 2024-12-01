@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit form</title>
+</head>
+<body>
+    <h1>Edit your form</h1>
+    <h2>
+       fruit id: <%= p.id%> <br/>
+       fruit name: <%= fruit.fruit %><br/>
+    </h2>
+    <form method="post" action="/practice/<%= fruit.id %>/?_method=PATCH">
+      
+           <textarea placeholder="fruit color"> </textarea
+           <button> submit</button>
+        
+    </form>
+    
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+</head>
+<body>
+    <h1> Daily posts</h1>
+     <% for(fruit of fruits) {%>
+       <div> 
+        <%= fruit.id%> 
+        <%= fruit.fruit %> <br>
+        <%=  fruit.color%>
+
+        <br>
+        <a href="http://localhost:8080/practice/:id/edit/"> edit</a>
+        <br>       
+       </div>
+        <% } %>
+        <a href="http://localhost:8080/practice/neweform/"> Add one</a>
+        
+</body>
+</html>
